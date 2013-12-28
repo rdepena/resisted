@@ -10,8 +10,14 @@
         //assign model values
         model.colors = resistor.colors;
         model.score = score;
+        model.availableColors = colorValues;
+        model.cheatSheet = false;
 
         $scope.model = model;
+
+        $scope.toggleCheatSheet = function () {
+            model.cheatSheet = !model.cheatSheet;
+        };
         
         $scope.answer = function () {
 

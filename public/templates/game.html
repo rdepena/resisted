@@ -41,6 +41,50 @@
 </div>
 <br>
 <div class="row">
+    <br>
+    <div class="col-md-6">
+        <a ng-click="toggleCheatSheet()">Toggle cheat sheet</a>
+        <table ng-show="model.cheatSheet" class="table table-striped table-bordered table-responsive" >
+            <thead>
+                <th>
+                    Color
+                </th>
+                <th>
+                    1st band
+                </th>
+                <th>
+                    2nd band
+                </th>
+                <th>
+                    3rd band
+                </th>
+                <th>
+                    Multiplier
+                </th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="color in model.availableColors" >
+                    <td style="background-color:{{color.hex}}; color:{{color.textColor}}">
+                        {{color.name}}                        
+                    </td>
+                    <td style="background-color:{{color.hex}}; color:{{color.textColor}}">
+                        {{color.value}}
+                    </td>
+                    <td style="background-color:{{color.hex}}; color:{{color.textColor}}">
+                        {{color.value}}
+                    </td>
+                    <td style="background-color:{{color.hex}}; color:{{color.textColor}}">
+                        {{color.value}}
+                    </td>
+                    <td style="background-color:{{color.hex}}; color:{{color.textColor}}">
+                        {{color.multiplier}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="row">
     <div class="col-md-6">
         <h4>Calculate the resistance</h4>
         <form novalidate>
