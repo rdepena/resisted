@@ -3,17 +3,36 @@
         <h4>Given the following resistor</h4>
         <div>
             <!-- create our resistor -->
-            <div class="resistorWire"></div>
-            <div class="resistorBase resistorleftEnd"></div>
-            <div class="resistorBase resistorLine" style="background-color:{{model.colors[0].hex}}"></div>
-            <div class="resistorBase"></div>
-            <div class="resistorBase resistorLine" style="background-color:{{model.colors[1].hex}}"></div>
-            <div class="resistorBase"></div>
-            <div class="resistorBase resistorLine" style="background-color:{{model.colors[2].hex}}"></div>
-            <div class="resistorBase" style="width:30px;"></div>
-            <div class="resistorBase resistorLine" style="background-color:#ffd700"></div>
-            <div class="resistorBase resistorRightEnd"></div>
-            <div class="resistorWire"></div>
+            <div class="resistorWire">
+            </div>
+            <div class="resistorBase resistorleftEnd">
+            </div>
+            <div class="resistorBase resistorLine" style="background-color:{{model.colors[0].hex}}">
+            </div>
+            <div class="resistorBase">
+            </div>
+            <div class="resistorBase resistorLine" style="background-color:{{model.colors[1].hex}}">
+            </div>
+            <div class="resistorBase">
+            </div>
+            <div class="resistorBase resistorLine" style="background-color:{{model.colors[2].hex}}">
+            </div>
+            <!-- only shown on 5 stripe resistors-->
+            <div class="resistorBase" ng-if="model.colors.length ===4">
+            </div>
+            <div class="resistorBase resistorLine" ng-if="model.colors.length ===4" style="background-color:{{model.colors[3].hex}}" >
+            </div>
+            <!-- end conditional stripes -->
+            <div class="resistorBase" style="width:30px;">
+            </div>
+            <div class="resistorBase resistorLine" ng-if="model.colors.length ===3" style="background-color:#ffd700">
+            </div>
+            <div class="resistorBase resistorLine" ng-if="model.colors.length ===4" style="background-color:#55460d">
+            </div>
+            <div class="resistorBase resistorRightEnd">
+            </div>
+            <div class="resistorWire">
+            </div>
         </div>
     </div>
     <div class="col-md-4">
