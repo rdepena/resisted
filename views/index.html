@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Resisted</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+          <style>
+                body {
+                    padding-top: 50px;
+                }
+                .footer {
+                  padding-top: 19px;
+                  color: #777;
+                  border-top: 1px solid #e5e5e5;
+                }
+
+                .resistorBase {
+                    height: 40px;
+                    width: 10px;
+                    display:inline-block;
+                    background-color: #60A7D8;
+                    margin-right: -4px;
+                }
+                .resistorLine {
+                    border: 1px solid black;
+                }
+                .resistorleftEnd {
+                    width: 20px;
+                    border-bottom-left-radius:10px;
+                    border-top-left-radius:10px;
+                }
+                .resistorRightEnd {
+                    width: 20px;
+                    border-bottom-right-radius:10px;
+                    border-top-right-radius:10px;
+                }
+                .resistorWire {
+                    color: #a7b0ad;
+                    background: #a7b0ad; 
+                    width: 50px; 
+                    height: 5px;
+                    display:inline-block;
+                    margin-bottom: 15px;
+                    margin-right: -5px;
+                }
+        </style>
+    </head>
+    <body ng-app="resisted">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <a href="https://github.com/rdepena/planningpoker">
+                    <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub">
+                </a>
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Resisted</a>
+                </div>
+            </div>
+
+        </div>
+        <div class="container">
+            <div ng-view>
+            </div>
+        </div>
+        
+        <script src="javascript/vendor/jquery.min.js"></script>
+        <script src="javascript/vendor/bootstrap.min.js"></script>
+        <script src="javascript/vendor/angular.min.js"></script>
+        <script src="javascript/vendor/angular-route.min.js"></script>
+        <script src="javascript/resisted/app.js"></script>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "name": "resisted",
+  "version": "0.0.1",
+  "private": false,
+  "scripts": {
+    "start": "index.html"
+  },
+  "dependencies": {
+    "express": "3.4.5",
+    "ejs": "*",
+    "grunt": "~0.4.1",
+    "grunt-cli": "~0.1.9",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-concat" : "~0.x.x",
+    "grunt-contrib-clean": "~0.5.0"
+  }
+}

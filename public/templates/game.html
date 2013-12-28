@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="col-md-4">
+        <h4>Given the following resistor:</h4>
+        <div>
+            <!-- create our resistor -->
+            <div class="resistorWire"></div>
+            <div class="resistorBase resistorleftEnd"></div>
+            <div class="resistorBase resistorLine" style="background-color:{{model.colors[0].hex}}"></div>
+            <div class="resistorBase"></div>
+            <div class="resistorBase resistorLine" style="background-color:{{model.colors[1].hex}}"></div>
+            <div class="resistorBase"></div>
+            <div class="resistorBase resistorLine" style="background-color:{{model.colors[2].hex}}"></div>
+            <div class="resistorBase" style="width:30px;"></div>
+            <div class="resistorBase resistorLine" style="background-color:#ffd700"></div>
+            <div class="resistorBase resistorRightEnd"></div>
+            <div class="resistorWire"></div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <h4>score: {{model.score}}v</h4>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-md-6">
+        <h4>Calculate the resistance:</h4>
+        <form novalidate>
+            <div class="input-group">
+                <span class="input-group-addon">Ohms</span>
+                <input type="number" ng-model="model.resistance" class="form-control"  min="0">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" ng-click="answer();" type="submit">Answer!</button>
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
