@@ -1,7 +1,7 @@
 node-dualshock-controller
 =========================
 
-`Resisted` is a game where you have to read random resistors, so far only 4 stripe resistors are available but I plan to add 5 stripes.
+`Resisted` is an app to practice reading and decoding resistors. 
 
 a nice explination on how to read resistors: http://www.wikihow.com/Read-Resistors
 
