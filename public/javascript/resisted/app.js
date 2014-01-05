@@ -27,36 +27,36 @@
             name : 'red',
             value : 2,
             multiplier : 100,
-            hex : '#da1337',
+            hex : '#990000',
             textColor : 'black'
         }, {
             name : 'orange',
             value : 3,
             multiplier : 1000,
-            hex : '#d28f35',
+            hex : '#b27300',
             textColor : 'black'
         }, {
             name : 'yellow',
             value : 4,
             multiplier : 10000,
-            hex : '#ffff00',
+            hex : '#cccc00',
             textColor : 'black'
         }, {
             name : 'green',
             value : 5,
             multiplier : 100000,
-            hex : '#00aa33',
+            hex : '#80c080',
             textColor : 'black'
         }, {
             name : 'blue',
             value : 6,
             multiplier : 1000000,
-            hex : '#00007f',
+            hex : '#007fff',
             textColor : 'white'
         }, {
             name : 'violet',
             value : 7,
-            hex : '#8e4e8e',
+            hex : '#b882ed',
             textColor : 'black'
         }, {
             name : 'grey',

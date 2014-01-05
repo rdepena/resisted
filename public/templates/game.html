@@ -1,7 +1,7 @@
 <div class="row">
     <div class="col-md-4">
-        <h4>Given the following resistor</h4>
-        <div>
+        <h4>Given the following resistor:</h4>
+        <div class="resistor">
             <!-- create our resistor -->
             <div class="resistorWire">
             </div>
@@ -23,7 +23,7 @@
             <div class="resistorBase resistorLine" ng-if="model.colors.length ===4" style="background-color:{{model.colors[3].hex}}" >
             </div>
             <!-- end conditional stripes -->
-            <div class="resistorBase" style="width:30px;">
+            <div class="resistorBase" style="width:60px;">
             </div>
             <div class="resistorBase resistorLine" ng-if="model.colors.length ===3" style="background-color:#ffd700">
             </div>
@@ -40,7 +40,7 @@
         <h4>score: {{model.score}}v</h4>
         <p>
            <h4 ng-show="model.previousAnswerCorrected" style="color:{{ model.isCorrect ? 'green' : 'red'}}">
-               Correct answer for the previous resistance: {{model.previousAnswerCorrected}}
+               Previous resistance: {{model.previousAnswerCorrected}}
            </h4>
         </p>
     </div>
