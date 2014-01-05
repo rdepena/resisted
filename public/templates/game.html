@@ -35,8 +35,14 @@
             </div>
         </div>
     </div>
+    <!-- Score Display -->
     <div class="col-md-4">
         <h4>score: {{model.score}}v</h4>
+        <p>
+           <h4 ng-show="model.previousAnswerCorrected" style="color:{{ model.isCorrect ? 'green' : 'red'}}">
+               Correct answer for the previous resistance: {{model.previousAnswerCorrected}}
+           </h4>
+        </p>
     </div>
 </div>
 <br>

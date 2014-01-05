@@ -107,12 +107,14 @@
         
         $scope.answer = function () {
 
-            if(resistor.resistance == model.resistance) {
+            model.isCorrect = resistor.resistance == model.resistance;
+            if(model.isCorrect) {
                 model.score += 100;
             } else {
                 model.score -= 100;
             }
 
+            model.previousAnswerCorrected = resistor.resistance; 
             //reset/set new values.
             model.resistance = "";
             resistor = resistedGameService.generateResistor(colorValues);
