@@ -1,5 +1,3 @@
-node-dualshock-controller
-=========================
 
 `Resisted` is an app to practice reading and decoding resistors. 
 
