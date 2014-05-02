@@ -1,5 +1,5 @@
-
-`Resisted` is an app to practice reading and decoding resistors. 
+`Resisted` web app that trains reading and decoding resistors. 
+=================================================================
 
 a nice explination on how to read resistors: http://www.wikihow.com/Read-Resistors
 
